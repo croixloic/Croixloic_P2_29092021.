@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg" sizes="16x16" href="./images/logo/Reservia.svg">
-    <title>Reservia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
+    <title>Reservia</title>
 </head>
 <body>
     <div id="container">
@@ -19,13 +20,28 @@
                     <ul class="choix">
                         <li> <a href="#hebergements"> Hébergements</a> </li>
                         <li><a href="#activites">Activités</a></li>
-                        <li><a href="#s_inscrire">S'inscrire</a></li>
-                        </ul>
+                        <li><a class="inscription" href="#">S'inscrire</a></li>
+                    </ul>
                 </nav>
-                <h1 id="titre"> Trouver votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre centre ville ou en pleine nature</p>
             </div>
-         </header>
-        </div>
+            <!-- header titre -->
+                <div classe="titre">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </div>
+
+            <!-- header recherche -->
+            <div class="filtre">
+                <div class="icon_localisation">
+                            <i class="fas fa-map-marker-alt"></i>
+                </div>
+                    <form action="#" method="POST" class="form_btn">
+                        <input class="search_btn" type="text" name="barre de recherche" placeholder="Maseille, France">
+                        <input class="go_btn" type="reset" value="Rechercher">
+                    </form>
+            </div>
+            
+        </header>
+    </div>
 </body>
 </html>

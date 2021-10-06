@@ -172,6 +172,7 @@ header li {
   flex-direction: row;
   width: 100%;
 }
+/* hébergements à Marseille */
 #hebergements_gauche {
     background-color: #f2f2f2;
     width: 65%;
@@ -184,6 +185,9 @@ header li {
     margin: auto;
     height: 95%;
     width: 90%;
+}
+.legend {
+  padding-left:10px ;
 }
 .hebergements_gille figure{
   display: flex;
@@ -204,20 +208,20 @@ header li {
   margin: 0 0 30px 0;
 }
 .hebergements_gille a {
-  width: 28%;
+  width: 30%;
   text-decoration: none;
   color: black;
 }
 .hebergements h2 {
     font-size: 22px;
-    padding-top: 20px;
+    margin: 50px 0 30px 0 ;
 }
 .hebergements_marseille {
   margin: 30px 0;
 }
 .hebergements_gille figure:hover {
   cursor: pointer;
-   transform: scale(1.1);
+  transform: scale(1.1);
 }
 .image1 {
  background-image: url(./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
@@ -294,4 +298,90 @@ header li {
   margin: 0;
   padding-left:50px ;
   display: block;
+}
+/* hébergements les plus populaires */
+#hebergements_droite{
+  background-color: #f2f2f2;
+  width: 30%;
+  border-radius: 20px;
+}
+.populaires h2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  color: black;
+  font-size: 22px;
+  margin-top: 50px 
+}
+
+.titre_droite{
+  display: flex;
+  justify-content: space-around;
+}
+.icon_populaires {
+  padding-top: 50px;
+  font-size: 25px;
+}
+.populaires_marseille{
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 4px 4px 11px 0 #9a9a9a;
+  margin-bottom: 40px;
+}
+.legend_droite{
+  padding-left: 20px;
+  width: 200px;
+}
+.legend_droite h3 {
+  margin: 10px 0 0 0;
+}
+.legend_droite p {
+  margin: 10px 0 40px 0;
+}
+.image_p1{
+  background-image: url(./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+  border-radius: 20px 0 0 20px ;
+  width: 140px;
+  height: 140px;
+  background-size: cover;
+  background-position: 25% 75%;
+}
+.image_p2{
+  background-image: url(./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+  border-radius: 20px 0 0 20px ;
+  width: 140px;
+  height: 140px;
+  background-size: cover;
+  background-position: 25% 75%;
+}
+.image_p3{
+  background-image: url(./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+  border-radius: 20px 0 0 20px ;
+  width: 140px;
+  height: 140px;
+  background-size: cover;
+  background-position: 25% 75%;
+}
+.populaire_grille a {
+  text-decoration: none;
+  color: black;
+ 
+}
+.populaire_grille figure:hover {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  transform: scale(1.1); 
+}
+.populaire_etoile{
+  color: #0065fc;
+  margin-left: 10px;
+  font-size: 10px;
+}
+.populaire_grille a:nth-child(2) .populaire_etoile i:nth-child(5){
+  color: #e4e4e4;
+}
+.populaire_grille a:nth-child(3) .populaire_etoile i:nth-child(5){
+  color: #e4e4e4;
 }

@@ -12,10 +12,10 @@ html {
 body {
   margin: 0;
 }
-a:hover {
+.navbar:hover {
   text-decoration: none;
 }
-a {
+.navbar {
   text-decoration: none;
   color: black;
   font-size: 16px;
@@ -45,7 +45,7 @@ header li {
   width: 40px;
   margin: 0;
 }
-.choix a:hover {
+.navbar:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
   padding-top: 10px;
@@ -54,8 +54,13 @@ header li {
 .inscription {
   font-weight: bolder;
   color: #0065fc;
+  margin: 0 30px;
 }
-
+.inscription:hover{
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+  padding-top: 10px;
+}
 /* header titre */
 
 .titre {
@@ -160,35 +165,59 @@ header li {
   font-size: 16px;
 }
 /* main */
-
+#main {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
 #hebergements_gauche {
     background-color: #f2f2f2;
-    margin-right: 460px ;
+    width: 65%;
     border-radius: 20px;
 }
 .hebergements {
     display: flex;
     justify-content: space-around;
     flex-direction: column; 
-    margin: 45px;
+    margin: auto;
+    height: 95%;
+    width: 90%;
+}
+.hebergements_gille figure{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  box-shadow: 4px 4px 11px 0 #9a9a9a;
+  padding: 5px 5px 10px 5px;
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
 }
 .hebergements_gille {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  background-color: white;
-  padding: 5px 5px 10px 5px;
-  border-radius: 20px;
+  margin: 0 0 30px 0;
 }
 .hebergements_gille a {
-  width: 30%;
+  width: 28%;
+  text-decoration: none;
+  color: black;
 }
 .hebergements h2 {
     font-size: 22px;
+    padding-top: 20px;
 }
 .hebergements_marseille {
-  margin: 0;
+  margin: 30px 0;
+}
+.hebergements_gille figure:hover {
+  cursor: pointer;
+   transform: scale(1.1);
 }
 .image1 {
  background-image: url(./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
@@ -238,3 +267,31 @@ header li {
   background-position: 25% 75%;
   border-radius: 20px 20px 0 0;
  }
+ .etoile i {
+   font-size: 12px;
+   color: #0065fc;
+ }
+ .hebergements_gille a:nth-child(1) .etoile i:nth-child(5) {
+   color: #e4e4e4;
+ }
+ .hebergements_gille a:nth-child(3) .etoile i:nth-child(5) {
+  color: #e4e4e4;
+}
+.hebergements_gille a:nth-child(4) .etoile i:nth-child(4) {
+  color: #e4e4e4;
+}
+.hebergements_gille a:nth-child(4) .etoile i:nth-child(5) {
+  color: #e4e4e4;
+}
+.hebergements_gille a:nth-child(5) .etoile i:nth-child(5) {
+  color: #e4e4e4;
+}
+.plus a{
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+  margin: 0;
+  padding-left:50px ;
+  display: block;
+}

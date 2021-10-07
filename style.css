@@ -55,8 +55,9 @@ header li {
   font-weight: bolder;
   color: #0065fc;
   margin: 0 30px;
+  text-decoration: none;
 }
-.inscription:hover{
+.inscription:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
   padding-top: 10px;
@@ -174,22 +175,22 @@ header li {
 }
 /* hébergements à Marseille */
 #hebergements_gauche {
-    background-color: #f2f2f2;
-    width: 65%;
-    border-radius: 20px;
+  background-color: #f2f2f2;
+  width: 65%;
+  border-radius: 20px;
 }
 .hebergements {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column; 
-    margin: auto;
-    height: 95%;
-    width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: auto;
+  height: 95%;
+  width: 90%;
 }
 .legend {
-  padding-left:10px ;
+  padding-left: 10px;
 }
-.hebergements_gille figure{
+.hebergements_gille figure {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -213,8 +214,8 @@ header li {
   color: black;
 }
 .hebergements h2 {
-    font-size: 22px;
-    margin: 50px 0 30px 0 ;
+  font-size: 22px;
+  margin: 50px 0 25px 0;
 }
 .hebergements_marseille {
   margin: 30px 0;
@@ -224,12 +225,12 @@ header li {
   transform: scale(1.1);
 }
 .image1 {
- background-image: url(./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
- width: 100%;
- height: 115px;
- background-size: cover;
- background-position: 25% 75%;
- border-radius: 20px 20px 0 0;
+  background-image: url(./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+  width: 100%;
+  height: 115px;
+  background-size: cover;
+  background-position: 25% 75%;
+  border-radius: 20px 20px 0 0;
 }
 .image2 {
   background-image: url(./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
@@ -238,47 +239,47 @@ header li {
   background-size: cover;
   background-position: 25% 75%;
   border-radius: 20px 20px 0 0;
- }
- .image3 {
+}
+.image3 {
   background-image: url(./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
   width: 100%;
   height: 115px;
   background-size: cover;
   background-position: 25% 75%;
   border-radius: 20px 20px 0 0;
- }
- .image4 {
+}
+.image4 {
   background-image: url(./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
   width: 100%;
   height: 115px;
   background-size: cover;
   background-position: 25% 75%;
   border-radius: 20px 20px 0 0;
- }
- .image5 {
+}
+.image5 {
   background-image: url(./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
   width: 100%;
   height: 115px;
   background-size: cover;
   background-position: 25% 75%;
   border-radius: 20px 20px 0 0;
- }
- .image6 {
+}
+.image6 {
   background-image: url(./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
   width: 100%;
   height: 115px;
   background-size: cover;
   background-position: 25% 75%;
   border-radius: 20px 20px 0 0;
- }
- .etoile i {
-   font-size: 12px;
-   color: #0065fc;
- }
- .hebergements_gille a:nth-child(1) .etoile i:nth-child(5) {
-   color: #e4e4e4;
- }
- .hebergements_gille a:nth-child(3) .etoile i:nth-child(5) {
+}
+.etoile i {
+  font-size: 12px;
+  color: #0065fc;
+}
+.hebergements_gille a:nth-child(1) .etoile i:nth-child(5) {
+  color: #e4e4e4;
+}
+.hebergements_gille a:nth-child(3) .etoile i:nth-child(5) {
   color: #e4e4e4;
 }
 .hebergements_gille a:nth-child(4) .etoile i:nth-child(4) {
@@ -290,17 +291,17 @@ header li {
 .hebergements_gille a:nth-child(5) .etoile i:nth-child(5) {
   color: #e4e4e4;
 }
-.plus a{
+.plus a {
   font-size: 18px;
   text-decoration: none;
   font-weight: bolder;
   color: black;
   margin: 0;
-  padding-left:50px ;
+  padding-left: 50px;
   display: block;
 }
 /* hébergements les plus populaires */
-#hebergements_droite{
+#hebergements_droite {
   background-color: #f2f2f2;
   width: 30%;
   border-radius: 20px;
@@ -308,13 +309,14 @@ header li {
 .populaires h2 {
   display: flex;
   justify-content: flex-start;
-  align-items:center;
+  align-items: center;
   color: black;
   font-size: 22px;
-  margin-top: 50px 
+  margin-top: 45px;
+  margin-bottom: 30px;
 }
 
-.titre_droite{
+.titre_droite {
   display: flex;
   justify-content: space-around;
 }
@@ -322,15 +324,15 @@ header li {
   padding-top: 50px;
   font-size: 25px;
 }
-.populaires_marseille{
+.populaires_marseille {
   display: flex;
   background-color: white;
   border-radius: 20px;
   padding: 5px;
   box-shadow: 4px 4px 11px 0 #9a9a9a;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
-.legend_droite{
+.legend_droite {
   padding-left: 20px;
   width: 200px;
 }
@@ -340,25 +342,25 @@ header li {
 .legend_droite p {
   margin: 10px 0 40px 0;
 }
-.image_p1{
+.image_p1 {
   background-image: url(./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-  border-radius: 20px 0 0 20px ;
+  border-radius: 20px 0 0 20px;
   width: 140px;
   height: 140px;
   background-size: cover;
   background-position: 25% 75%;
 }
-.image_p2{
+.image_p2 {
   background-image: url(./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
-  border-radius: 20px 0 0 20px ;
+  border-radius: 20px 0 0 20px;
   width: 140px;
   height: 140px;
   background-size: cover;
   background-position: 25% 75%;
 }
-.image_p3{
+.image_p3 {
   background-image: url(./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
-  border-radius: 20px 0 0 20px ;
+  border-radius: 20px 0 0 20px;
   width: 140px;
   height: 140px;
   background-size: cover;
@@ -367,21 +369,129 @@ header li {
 .populaire_grille a {
   text-decoration: none;
   color: black;
- 
 }
 .populaire_grille figure:hover {
   cursor: pointer;
   transition: 0.2s ease-in-out;
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
-.populaire_etoile{
+.populaire_etoile {
   color: #0065fc;
   margin-left: 10px;
   font-size: 10px;
 }
-.populaire_grille a:nth-child(2) .populaire_etoile i:nth-child(5){
+.populaire_grille a:nth-child(2) .populaire_etoile i:nth-child(5) {
   color: #e4e4e4;
 }
-.populaire_grille a:nth-child(3) .populaire_etoile i:nth-child(5){
+.populaire_grille a:nth-child(3) .populaire_etoile i:nth-child(5) {
   color: #e4e4e4;
+}
+/* Activités Marseille */
+#activites {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+.visite {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.contour {
+  box-shadow: 4px 4px 11px -6px #9a9a9a;
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+}
+.contour:hover {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+.taille {
+  margin: 0;
+  width: 25%;
+  height: 450px;
+}
+.contour a {
+  text-decoration: none;
+  color: black;
+}
+.contour p {
+  padding: 10px 0 10px 20px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.img_port {
+  background: url(./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  height: 390px;
+  width: 305px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  background-position: 35% 65%;
+}
+.img_fort {
+  background: url(./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  height: 185px;
+  width: 305px;
+  border-radius: 20px 20px 0 0;
+  background-position: 30%;
+}
+.img_frioul {
+  background: url(./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+  background-repeat: no-repeat;
+  height: 115px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  margin-top: 45px;
+  background-position-y: 50%;
+}
+.img_calanques {
+  background: url(./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+  height: 390px;
+  width: 305px;
+  border-radius: 20px 20px 0 0;
+  background-position-x: 40%;
+}
+.img_ndg {
+  background: url(./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+  height: 150px;
+  width: 305px;
+  border-radius: 20px 20px 0 0;
+  background-position: 40% 15%;
+}
+.img_lonchamp {
+  background: url(./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+  height: 155px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  margin-top: 45px;
+  background-position: 50%;
+}
+/* footer */
+ footer {
+  padding-bottom: 50px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-titre {
+  font-weight: bolder;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+footer ul {
+  padding-left: 280px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  list-style: none;
+}
+footer ul a {
+  text-decoration: none;
+  color: black;
+}
+footer li {
+  font-size: 16px;
+  margin-top: 10px;
 }

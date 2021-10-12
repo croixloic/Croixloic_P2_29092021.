@@ -35,7 +35,7 @@
           </nav>
         </div>
         <!-- header titre -->
-        <div classe="titre">
+        <div class="titre">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
           <p>En plein centre ville ou en pleine nature</p>
         </div>
@@ -52,30 +52,32 @@
               name="barre de recherche"
               placeholder="Marseille, France"
             />
+            <div class="icon_loupe"><i class="fas fa-search"></i></div>
             <input class="go_btn" type="reset" value="Rechercher" />
           </form>
         </div>
+        <!-- header filtre -->
         <section class="filtre">
           <h3>Filtres</h3>
           <div class="filtre_selection">
-            <i class="fas fa-money-bill-wave"></i>
+            <i class="fas fa-money-bill-wave filtres_icons"></i>
+            <div class="filtre_text">Économique</div>
           </div>
-          <div class="filtre_text">Économique</div>
 
           <div class="filtre_selection">
-            <i class="fas fa-child"></i>
+            <i class="fas fa-child filtres_icons"></i>
+            <div class="filtre_text">Familial</div>
           </div>
-          <div class="filtre_text">Familial</div>
 
           <div class="filtre_selection">
-            <i class="fas fa-heart"></i>
+            <i class="fas fa-heart filtres_icons"></i>
+            <div class="filtre_text">Romantique</div>
           </div>
-          <div class="filtre_text">Romantique</div>
 
           <div class="filtre_selection">
-            <i class="fas fa-dog"></i>
+            <i class="fas fa-dog filtres_icons"></i>
+            <div class="filtre_text">Animaux autorisés</div>
           </div>
-          <div class="filtre_text">Animaux autorisés</div>
         </section>
         <!-- header info -->
         <div class="header_info">
@@ -91,8 +93,8 @@
         <section id="hebergements_gauche">
           <div class="hebergements">
             <h2>Hébergements à Marseille</h2>
-            <div class="hebergements_gille">
-              <a href="#">
+            <div class="hebergements_grille">
+              <a href="#hebergements">
                 <figure class="hebergements_marseille">
                   <div class="image1"></div>
                   <figcaption class="legend">
@@ -261,7 +263,7 @@
         <h2>Activités à Marseille</h2>
         <div class="visite">
           <figure class="contour">
-            <a class="vieux_port" href="#">
+            <a class="vieux_port" href="#activites">
               <div class="img_port"></div>
               <p>Vieux Port</p>
             </a>
@@ -304,22 +306,22 @@
       </section>
     </div>
     <footer>
-        <ul>
-            <li class="footer-titre">A propos</li>
-            <li><a href="#">Fonctionnement du site</a></li>
-            <li><a href="#">Conditions générales de vente</a></li>
-            <li><a href="#">Données et confidentialité</a></li>
-        </ul>
-        <ul>
-            <li class="footer-titre">Nos hébergements</li>
-            <li><a href="#">Charte qualité</a></li>
-            <li><a href="#">Soumettre votre hôtel</a></li>
-        </ul>
-        <ul>
-            <li class="footer-titre">Assistance</li>
-            <li><a href="#">Centre d'aide</a></li>
-            <li><a href="#">Nous contacter</a></li>
-        </ul>
+      <ul>
+        <li class="footer_titre">A propos</li>
+        <li><a href="#">Fonctionnement du site</a></li>
+        <li><a href="#">Conditions générales de vente</a></li>
+        <li><a href="#">Données et confidentialité</a></li>
+      </ul>
+      <ul>
+        <li class="footer_titre">Nos hébergements</li>
+        <li><a href="#">Charte qualité</a></li>
+        <li><a href="#">Soumettre votre hôtel</a></li>
+      </ul>
+      <ul>
+        <li class="footer_titre">Assistance</li>
+        <li><a href="#">Centre d'aide</a></li>
+        <li><a href="#">Nous contacter</a></li>
+      </ul>
     </footer>
   </body>
 </html>

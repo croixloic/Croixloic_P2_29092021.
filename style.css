@@ -426,17 +426,22 @@ header li {
   cursor: pointer;
   transition: 0.2s ease-in-out;
   transform: scale(1.1);
-}
+ }
 .taille {
   margin: 0;
   width: 25%;
   height: 450px;
-}
+} 
 .contour a {
   text-decoration: none;
   color: black;
 }
 .contour p {
+  padding: 10px 0 10px 20px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.taille .contour p {
   padding: 10px 0 10px 20px;
   font-size: 16px;
   font-weight: bolder;
@@ -452,15 +457,16 @@ header li {
 .img_fort {
   background: url(./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
   height: 185px;
-  width: 305px;
+  width: 305px; 
   border-radius: 20px 20px 0 0;
   background-position: 30%;
+  object-fit: cover;
 }
 .img_frioul {
   background: url(./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
   background-repeat: no-repeat;
   height: 115px;
-  width: 100%;
+  width: 305px; 
   border-radius: 20px 20px 0 0;
   object-fit: cover;
   margin-top: 45px;
@@ -472,6 +478,7 @@ header li {
   width: 305px;
   border-radius: 20px 20px 0 0;
   background-position-x: 40%;
+  object-fit: cover;
 }
 .img_ndg {
   background: url(./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
@@ -479,6 +486,7 @@ header li {
   width: 305px;
   border-radius: 20px 20px 0 0;
   background-position: 40% 15%;
+  object-fit: cover;
 }
 .img_lonchamp {
   background: url(./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
@@ -487,6 +495,7 @@ header li {
   border-radius: 20px 20px 0 0;
   margin-top: 45px;
   background-position: 50%;
+  object-fit: cover;
 }
 /* footer */
 footer {
@@ -706,4 +715,151 @@ footer ul {
   padding-left: 30px;
   margin-bottom: 0%;
 }
+}
+@media (min-width: 800px) and (max-width: 1250px){
+  body {
+    width: 100%;
+    margin: auto;
+  }
+  #container {
+    max-width: 100%;
+    padding: 0;
+    margin: auto;
+  }
+  #main {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  #header_top {
+    display: block;
+    position: relative;
+    margin-bottom: 40px;
+    height: auto;
+  }
+  header .choix {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    padding: 0;
+  }
+  .navbar {
+    margin: 0 40px;
+  }
+  #header_top li:nth-child(1) {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #9a9a9a;
+    margin-left: -30px;
+    width: 50%;
+  }
+  .inscription {
+   margin-left: 280px;
+  }
+  
+  #header_top li:nth-child(2) {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #9a9a9a;
+    width: 50%;
+  }
+   #header_top li:nth-child(3) {
+    margin-bottom: 30px;
+    text-align: right;
+    margin-top: -30px;
+  } 
+  #header_top li:nth-child(1):hover {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0065fc;
+    color: #0065fc;
+  }
+  #header_top li:nth-child(2):hover {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #0065fc;
+    color: #0065fc;
+  }
+  #header_top .choix a:hover {
+    border-top: none;
+  }
+  .filtre_selection {
+    margin-top: 20px;
+  }
+  .icon_loupe {
+    background-color: #0065fc;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 20px;
+    position: initial;
+  }
+  .go_btn{
+    display: none;
+  }
+  #hebergements_droite {
+    width: 100%;
+    text-transform: none;
+    border-radius: 0;
+   }
+   #hebergements_gauche {
+     background-color: white;
+     border-radius: 0;
+     width: 100%;
+   }
+   #activites {
+     display: flex;
+     flex-wrap: wrap;
+     height: auto;
+     margin-top: 20px;
+     margin-bottom: 60px;
+     align-items: center;
+    }
+    .img_port {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 20px;
+      background-position: 35% 50%;
+    }
+    .taille {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      margin-bottom: 150px;
+    }
+    .contour {
+      height: 100%;
+    }
+    .contour p {
+      font-size: 13px;
+    }
+    .img_port{   
+      width: 200px;
+      height: 400px;
+      margin-bottom: 20px;
+      background-position: 35% 50%;
+     }
+     .img_fort {
+      height: 155px;
+      width: 200px;
+      }
+  
+    .img_frioul {
+      height: 155px;
+      width: 200px;
+      margin-top: 0;
+    }
+    .img_calanques {
+      height: 400px;
+      width: 200px;
+      background-position: 45% 60%;
+    }
+    .img_ndg {
+      height: 155px;
+      width: 200px;
+    }
+    .img_lonchamp {
+      height: 155px;
+      width: 200px;
+      margin-top: 0;
+    }
 }

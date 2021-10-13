@@ -479,6 +479,7 @@ header li {
   border-radius: 20px 20px 0 0;
   background-position-x: 40%;
   object-fit: cover;
+  background-repeat: no-repeat;
 }
 .img_ndg {
   background: url(./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
@@ -724,7 +725,7 @@ footer ul {
   #container {
     max-width: 100%;
     padding: 0;
-    margin: auto;
+    margin: 10px;
   }
   #main {
     display: flex;
@@ -832,33 +833,37 @@ footer ul {
     .contour p {
       font-size: 13px;
     }
+    .taille .contour p {
+      font-size: 13px;
+    }
     .img_port{   
       width: 200px;
-      height: 400px;
+      height: 405px;
       margin-bottom: 20px;
       background-position: 35% 50%;
      }
      .img_fort {
-      height: 155px;
+      height: 150px;
       width: 200px;
       }
   
     .img_frioul {
-      height: 155px;
+      height: 150px;
       width: 200px;
       margin-top: 0;
     }
     .img_calanques {
-      height: 400px;
+      height: 405px;
       width: 200px;
       background-position: 45% 60%;
+      
     }
     .img_ndg {
-      height: 155px;
+      height: 150px;
       width: 200px;
     }
     .img_lonchamp {
-      height: 155px;
+      height: 150px;
       width: 200px;
       margin-top: 0;
     }

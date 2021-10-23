@@ -415,6 +415,10 @@ header li {
   justify-content: space-between;
   flex-direction: row;
 }
+.image_activite {
+  width: auto;
+  
+}
 .contour {
   box-shadow: 4px 4px 11px -6px #9a9a9a;
   border-radius: 20px;
@@ -451,24 +455,30 @@ header li {
   border-radius: 20px 20px 0 0;
   object-fit: cover;
   background-position: 35% 65%;
+  background-size: cover;
 }
 .img_fort {
-  background: url(./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  background: url(./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) no-repeat;
   height: 185px;
-  width: 305px;
+  width: 100%;
   border-radius: 20px 20px 0 0;
   background-position: 30%;
   object-fit: cover;
+  max-width: 100%;
+  background-size: cover;
+  
 }
 .img_frioul {
   background: url(./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
   background-repeat: no-repeat;
   height: 115px;
-  width: 305px;
+  width: 100%;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
   margin-top: 45px;
   background-position-y: 50%;
+  max-width: 100%;
+  background-size: cover;
 }
 .img_calanques {
   background: url(./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
@@ -478,23 +488,28 @@ header li {
   background-position-x: 40%;
   object-fit: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .img_ndg {
   background: url(./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
   height: 150px;
-  width: 305px;
+  width: 100%;
   border-radius: 20px 20px 0 0;
   background-position: 40% 15%;
   object-fit: cover;
+  max-width: 100%;
+  background-size: cover;
 }
 .img_lonchamp {
-  background: url(./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+  background: url(./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) no-repeat;
   height: 155px;
   width: 100%;
   border-radius: 20px 20px 0 0;
   margin-top: 45px;
   background-position: 50%;
   object-fit: cover;
+  max-width: 100%;
+  background-size: cover;
 }
 /* footer */
 footer {
@@ -544,7 +559,12 @@ footer li {
     height: auto;
   }
   header .choix {
+    text-align: center;
+    margin-top: 20px;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-decoration: none;
     flex-wrap: wrap-reverse;
   }
   .navbar {
@@ -556,10 +576,6 @@ footer li {
     margin-left: -30px;
     width: 50%;
   }
-  .inscription {
-    margin-left: 220px;
-  }
-
   #header_top li:nth-child(2) {
     padding-bottom: 10px;
     border-bottom: 2px solid #9a9a9a;
@@ -681,25 +697,25 @@ footer li {
   }
   .img_fort {
     height: 200px;
-    width: 266.25px;
+    width: 100%;
   }
   .img_frioul {
     height: 200px;
-    width: 266.25px;
+    width: 100%;
     margin-top: 0;
   }
   .img_calanques {
     height: 200px;
-    width: 266.25px;
+    width: 100%;
     background-position: 45% 60%;
   }
   .img_ndg {
     height: 200px;
-    width: 266.25px;
+    width: 100%;
   }
   .img_lonchamp {
     height: 200px;
-    width: 266.25px;
+    width: 100%;
     margin: 0;
   }
   /* footer mobile */
@@ -759,7 +775,7 @@ footer li {
     display: flex;
     justify-content: center;
   }
-  .recherche {
+  .recherche_btn {
     display: none;
   }
   #hebergements_droite {
